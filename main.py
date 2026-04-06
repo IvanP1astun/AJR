@@ -17,5 +17,21 @@ HEADERS = {
 }
 
 # Остальная логика фильтрации и поиска
-SEARCH_QUERIES = ['Python стажер', 'Python junior', 'Devops инженер']
+SEARCH_QUERIES = ['Python стажер', 'Python junior', 'Devops инженер', 'Python', 'Python разработчик']
 STOP_WORDS = ['senior', 'middle', 'lead', 'java', 'c#', 'опыт от 3 лет']
+
+
+def get_vacancies(query):
+    pass
+
+
+def apply(v_id, v_title):
+    pass
+
+
+def main():
+    pass
+
+
+if __name__ == '__main__':
+    main()
