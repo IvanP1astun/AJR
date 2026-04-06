@@ -88,16 +88,14 @@ def main():
     for query in SEARCH_QUERIES:
         print(f"\n--- Ищем по запросу: {query} ---")
         vacancies = get_vacancies(query)
-        
         for vac in vacancies:
             success = apply_to_vacancy(vac)
-            
             if success:
                 processed_count += 1
                 wait = random.uniform(15, 60)
                 print(f"💤 Ждем {wait:.1f} сек...")
                 time.sleep(wait)
-    
+
     print(f"\n🎯 Работа завершена! Всего новых откликов: {processed_count}")
 
 
